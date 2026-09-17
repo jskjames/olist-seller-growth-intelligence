@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An audited case study of seller acquisition, conversion and observed 90-day sales in the Olist marketplace.">
+  <title>Seller Growth | Olist Case Study</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="brand-mark">og</span><span>OLIST<br><small>SELLER INTELLIGENCE</small></span></div>
+      <div class="rail-heading">THE QUESTION</div>
+      <p class="rail-copy">Which seller-acquisition sources bring in merchants who actually make sales?</p>
+      <nav aria-label="Dashboard navigation">
+        <a href="#overview" class="active">01 <span>Overview</span></a>
+        <a href="#channels">02 <span>Channel performance</span></a>
+        <a href="#seller-outcomes">03 <span>Seller outcomes</span></a>
+        <a href="#scenario">04 <span>Planning scenario</span></a>
+        <a href="#method">05 <span>Method</span></a>
+      </nav>
+      <div class="rail-bottom">HISTORICAL CASE STUDY<br><strong>2017 — 2018</strong><br><span>Brazilian reais · BRL</span></div>
+    </aside>
+    <main>
+      <header id="overview" class="page-head">
+        <div><div class="eyebrow">MARKETPLACE ANALYTICS / 01</div><h1>Seller growth,<br><em>after the sign-up.</em></h1>
+          <p class="intro">A qualified lead is not the end goal. This analysis connects acquisition records to delivered orders and compares channels on conversion, seller activation and observed item sales.</p></div>
+        <div class="context"><span class="context-line"></span><span>Source window</span><strong>June 2017 – August 2018</strong><span>Seller-outcome cutoff</span><strong>31 August 2018</strong></div>
+      </header>
+
+      <section class="kpis" aria-label="Key figures">
+        <div class="kpi"><span>Qualified leads</span><strong id="kpi-leads">—</strong><small>Fully observed 90-day win window</small></div>
+        <div class="kpi"><span>Won within 90 days</span><strong id="kpi-conv">—</strong><small id="kpi-wins">—</small></div>
+        <div class="kpi"><span>Matured 90-day winners</span><strong id="kpi-sellers">—</strong><small>Won within 90 days; then 90 days of orders</small></div>
+        <div class="kpi"><span>Recorded 90-day GMV</span><strong id="kpi-gmv">—</strong><small>Delivered item price · BRL</small></div>
+      </section>
+
+      <section id="channels" class="section-grid">
+        <div class="section-heading"><div class="eyebrow">ACQUISITION / 02</div><h2>Volume is only<br><em>half the story.</em></h2><p>Source categories vary in size and measurement quality. Conversion is wins within 90 days divided by eligible qualified leads; thin bars show 95% Wilson intervals.</p></div>
+        <div class="panel large"><div class="panel-head"><div><span class="eyebrow">QUALIFIED LEADS → WINS</span><h3>90-day conversion by source</h3></div><span class="label">95% INTERVALS</span></div><div id="conversion-chart" class="bar-chart" role="img" aria-label="Conversion rates by acquisition source"></div><div class="chart-foot">Unknown and missing origins are shown for completeness, but cannot guide channel spend.</div></div>
+      </section>
+
+      <section id="seller-outcomes" class="outcomes">
+        <div class="outcome-head"><div><div class="eyebrow">AFTER THE WIN / 03</div><h2>Did the seller<br><em>actually transact?</em></h2></div><div class="filter-wrap"><label for="origin-filter">Explore acquisition source</label><select id="origin-filter" aria-label="Acquisition source"><option value="traceable">All known sources</option></select></div></div>
+        <div class="outcome-grid">
+          <div class="panel"><div class="panel-head"><div><span class="eyebrow">SELLER COHORT · 90 DAYS</span><h3>Recorded item sales per win</h3></div></div><div class="metric"><span id="yield-value">—</span><small>mean GMV / matured win · BRL</small></div><div id="yield-interval" class="confidence"></div><p id="yield-note" class="panel-note"></p></div>
+          <div class="panel"><div class="panel-head"><div><span class="eyebrow">OBSERVED ACTIVATION</span><h3>At least one delivered order</h3></div></div><div class="metric"><span id="activation-value">—</span><small>of matured seller wins</small></div><div class="track"><i id="activation-track"></i></div><p id="activation-note" class="panel-note"></p></div>
+          <div class="panel wide"><div class="panel-head"><div><span class="eyebrow">MATCHED SELLERS · AFTER WIN</span><h3>Recorded monthly item sales</h3></div><span class="label">BRL · NOT PROFIT</span></div><div id="monthly-chart" class="line-holder" role="img" aria-label="Monthly item sales for matched sellers"></div><div class="chart-foot">Only delivered items after the seller’s recorded win date; not total marketplace sales.</div></div>
+        </div>
+      </section>
+
+      <section id="scenario" class="scenario"><div class="scenario-copy"><div class="eyebrow">DECISION MODEL / 04</div><h2>What would a<br><em>better funnel mean?</em></h2><p>A transparent planning calculation using historical observed rates. Change the inputs; this is a scenario, not a measured treatment effect or observed company profit.</p><div class="scenario-warning" id="scenario-warning"></div></div>
+        <div class="panel scenario-panel"><div class="inputs"><label>Additional qualified leads<input id="assumed-leads" type="number" min="0" step="100" value="1000"></label><label>Win-rate change (percentage points)<input id="assumed-uplift" type="number" min="-20" max="20" step="0.5" value="1"></label><label>Assumed marketplace fee rate (%)<input id="assumed-fee" type="number" min="0" max="100" step="1" value="12"></label><label>Additional program cost (BRL)<input id="assumed-cost" type="number" min="0" step="1000" value="10000"></label></div>
+          <div class="model-results"><div><span>Expected wins at adjusted rate</span><strong id="result-wins">—</strong></div><div><span>Indicative 90-day fee revenue</span><strong id="result-fees">—</strong></div><div class="result-primary"><span>Indicative fee revenue less program cost</span><strong id="result-net">—</strong></div></div><p class="model-foot">The fee rate and program cost are editable assumptions; actual take rate, acquisition cost and contribution margin are unavailable. Expected sales use the historical mean for fully matured won sellers, including zeros.</p></div>
+      </section>
+
+      <section id="method" class="method"><div class="eyebrow">READ THE FINE PRINT / 05</div><h2>Measurement rules.</h2><div class="method-grid"><div><span>01 · LEAD GRAIN</span><p>One row per marketing-qualified lead. A 90-day win counts only when the deal’s date is within 90 days of first contact. No raw top-of-funnel traffic is available.</p></div><div><span>02 · SELLER GRAIN</span><p>One row per seller who won within 90 days of first contact, with a complete 90-day selling window by 31 August 2018. No recorded eligible order means zero observed sales, not proof the seller never sold.</p></div><div><span>03 · MONEY GRAIN</span><p>Delivered order items, joined to orders on order ID and to won deals by seller ID. GMV sums item price only and excludes freight. It is not net revenue, profit or an attribution estimate.</p></div><div><span>04 · UNCERTAINTY</span><p>Wilson intervals describe lead conversion. Bootstrap intervals describe a seller cohort’s mean observed GMV. Small cohorts are not suitable for strong channel-ranking claims.</p></div></div><div class="sources">Sources: <a href="https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist" target="_blank" rel="noopener">Olist marketing funnel</a> · <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank" rel="noopener">Olist Brazilian e-commerce</a>. Reproducible queries and audit are in the project repository.</div></section>
+      <footer>OLIST SELLER GROWTH INTELLIGENCE <span>HISTORICAL PORTFOLIO CASE STUDY · NOT AN OLIST COMPANY REPORT</span></footer>
+    </main>
+  </div>
+  <script src="data.js"></script><script src="script.js"></script>
+</body>
+</html>

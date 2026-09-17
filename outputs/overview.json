@@ -1,0 +1,16 @@
+{
+  "eligible_leads_90d": 8000,
+  "won_leads_90d": 690,
+  "overall_conversion_90d": 0.08625,
+  "total_closed_deals": 842,
+  "matured_seller_wins": 635,
+  "matured_deals_not_won_within_90d": 32,
+  "wins_with_recorded_sale_90d": 276,
+  "recorded_seller_gmv_90d_brl": 328334.48,
+  "overall_mean_gmv_per_matured_win_brl": 517.0621732283464,
+  "orders_after_extract_cutoff": 20,
+  "pre_win_item_rows_excluded": 0,
+  "item_rows_missing_order_excluded": 0,
+  "delivered_item_rows_through_cutoff": 110197,
+  "matched_deal_sellers_through_cutoff": 376
+}

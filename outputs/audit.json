@@ -1,0 +1,28 @@
+{
+  "source_rows": {
+    "leads": 8000,
+    "wins": 842,
+    "items": 112650,
+    "orders": 99441
+  },
+  "sha256": {
+    "leads": "5537753b7549ce4068e52e2402c29f2773c5375fc0575520ae8f3f301f666573",
+    "wins": "1433f402d8fff00ca167579de641d9525f6e846368958c166f699ef1b0c31f3d",
+    "items": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "orders": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf"
+  },
+  "integrity": {
+    "duplicate_lead_ids": 0,
+    "duplicate_win_lead_ids": 0,
+    "duplicate_win_seller_ids": 0,
+    "duplicate_order_ids": 0,
+    "duplicate_item_keys": 0,
+    "win_ids_not_in_leads": 0,
+    "items_without_orders": 0,
+    "negative_item_prices": 0,
+    "win_before_first_contact": 1
+  },
+  "order_cutoff": "2018-08-31 23:59:59",
+  "win_observation_end": "2018-11-14 23:59:59",
+  "orders_after_extract_cutoff": 20
+}
