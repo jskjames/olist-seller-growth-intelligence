@@ -14,9 +14,9 @@ dashboard.
 
 ## What you can open now
 
-- [Interactive dashboard](dashboard/index.html): open locally in a browser;
-  choose a channel, review intervals and recorded seller sales, adjust an
-  illustrative planning scenario. It works without a hosted server.
+- [Live interactive dashboard](https://jskjames.github.io/olist-seller-growth-intelligence/):
+  choose a channel, review intervals and recorded seller sales, and adjust an
+  illustrative planning scenario directly in your browser.
 - [Financial scenario workbook](outputs/de15249559e3/olist_seller_growth_scenario.xlsx):
   change the highlighted input cells; observed data and assumptions are kept
   on separate worksheets.
